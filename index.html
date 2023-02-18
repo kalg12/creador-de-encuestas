@@ -6,10 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creador de encuestas</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 </head>
 
 <body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://cetmar18.edu.mx/images/Logo_Cetmar18.png" alt="Logo" width="28" height="25"
+                    class="d-inline-block align-text-top">
+                Creador de Formularios
+            </a>
+        </div>
+    </nav>
+    <div class="container mt-2 col-md-2">
+        <form action="crear_tabla.php" method="post">
+            <div>
+                <label for="tabla">Nombre de la tabla:</label>
+                <input type="text" name="tabla" id="tabla">
+            </div>
 
+            <div class="mt-2">
+                <label for="preguntas">Número de preguntas:</label>
+                <input type="number" name="preguntas" id="preguntas">
+            </div>
+
+            <div class="mt-2">
+                <input type="submit" value="Crear tabla">
+            </div>
+        </form>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
